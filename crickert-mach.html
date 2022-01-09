@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket match</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                background-color: white;
+                left: 0px;
+                top: 0;
+            }
+            25%{
+                background-color: red;
+                top: 400px;
+
+            }
+            50%{
+                background-color: white;
+                top: 0;
+            }
+            75%{
+                background-color: red;
+                top: 400px;
+            }
+            100%{
+                background-color: white;
+                left: 900px;
+                top: 0;
+            }
+        }
+
+        .stage{
+            height: 500px;
+            width:1000px;
+            background-color: lightpink;
+            margin-left: 250px;
+            
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+           background-color: magenta;
+           animation: sliding 3s ease-in-out 0.3s infinite alternate;
+           animation-play-state: running;
+           position: relative;
+           animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        h1{
+            text-align: center;
+            color: magenta;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is Animation</h1>
+ <div class="stage">
+     <div class="ball">
+
+     </div>
+
+ </div>
+</body>
+</html>
