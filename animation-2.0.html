@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                left: 0px;
+                top: 0px;
+                background-color: blueviolet;
+            }
+            10%{
+                top:400px ;
+                background-color: blue;
+            }
+            20%{
+                top: 0px;
+                background-color: skyblue;
+            }
+            30%{
+                top:400px ;
+                background-color: greenyellow;
+            }
+            40%{
+                top: 0px;
+                background-color: yellow;
+            }
+            50%{
+                top:400px ;
+                background-color: tomato;
+            }
+            60%{
+                top: 0px;
+                background-color: orange;
+            }
+            70%{
+                top:400px ;
+                background-color: black;
+            }
+            80%{
+                top: 0px;
+                background-color: white;
+            }
+            90%{
+                top:400px ;
+                background-color: violet;
+            }
+            100%{
+                left: 900px;
+                top: 0px;
+                background-color: red;
+            }
+        }
+        .area{
+            height: 500px;
+            width: 1000px;
+            background-color: rgb(253, 230, 234);
+            margin-left: 250px;
+            border: 2px solid red;
+            border-radius: 5px;
+
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation: sliding 5s ease-in-out 0.4s infinite alternate;
+            position: relative;
+            animation-play-state: running;
+        }
+        .head{
+            text-align: center;
+            margin: 50px;
+            font-size: 30px;
+            font-weight: 600;
+        
+        }
+        .head:hover{
+            border: 3px solid tomato;
+            padding: 3px 10px;
+           border-radius: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            This is Animation
+        </div>
+    </header>
+    <div class="area">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
